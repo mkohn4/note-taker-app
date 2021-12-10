@@ -3,7 +3,7 @@ const router = require('express').Router();
 //deconstruct notes json and require it in the app
 //deconstructing notes ACTUALLY broke it
 const notes = require('../../db/db.json');
-const addNote = require('../../lib/note');
+const {addNote, deleteNote} = require('../../lib/note');
 
 //when you visit the notes, get the current list and send the json results
 router.get('/notes', (req,res) => {
@@ -17,6 +17,17 @@ router.post('/notes', (req,res) => {
     const noteAdded = addNote(req.body, notes);
     res.json(noteAdded);
 })
+
+router.delete('/notes/:id', (req,res) => {
+    console.log(req.body);
+    //const deleteNotes = deleteNote(req.body, notes);
+    //res.json(req.body);
+})
+/*router.delete('/notes/:id', (req,res) => {
+    console.log(req.body);
+    const deleteNotes = deleteNote(req.body, notes);
+    //res.json(req.body);
+})*/
 
 
 
