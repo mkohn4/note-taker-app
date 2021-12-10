@@ -178,6 +178,10 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
   noteText.addEventListener('keyup', handleRenderSaveBtn);
-}
+  //for each list item in the notes list, add a click event to handle note view
+  noteList.forEach(note => {
+    note.addEventListener('click', handleNoteView)
+  });
+};
 
 getAndRenderNotes();
