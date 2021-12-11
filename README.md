@@ -15,7 +15,8 @@
 
 ## Description
 
-An app to allow a user to take notes and save them to a server
+An app to allow a user to take notes and save them to a server.
+This application is deployed to Heroku @ https://frozen-woodland-95191.herokuapp.com/notes
 
 ## Installation
 
