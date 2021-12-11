@@ -6,7 +6,8 @@ const api = require('./routes/api');
 const app  = express();
 //serve up all assets from public folder
 app.use(express.static('public'));
-//this allows you to return the json format
+//this allows you to tell express you will send json data and return json
+//and allows for response.json
 app.use(express.json());
 //when user navigates to homepage, show index.html
 app.use('/api', api);
