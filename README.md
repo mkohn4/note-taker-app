@@ -13,6 +13,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![note-taker-image](./assets/note_taker.png)
+
 ## Description
 
 An app to allow a user to take notes and save them to a server.
